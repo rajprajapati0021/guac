@@ -1,0 +1,14 @@
+# Use the official Guacamole image from Docker Hub
+FROM guacamole/guacamole:latest
+
+# Set environment variables for your MySQL database
+ENV MYSQL_HOST=<YOUR_DB_HOSTNAME>
+ENV MYSQL_USER=<YOUR_DB_USER>
+ENV MYSQL_PASSWORD=<YOUR_DB_PASSWORD>
+ENV MYSQL_DATABASE=<YOUR_DB_NAME>
+
+# Expose the default Guacamole port
+EXPOSE 8080
+
+# Start Guacamole service (this is typically handled by the image)
+CMD ["guacamole"]
