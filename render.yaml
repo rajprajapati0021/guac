@@ -1,0 +1,11 @@
+# Exported from Render on 2025-02-17T09:00:24Z
+services:
+- type: web
+  name: guac
+  runtime: docker
+  repo: https://github.com/rajprajapati0021/guac
+  plan: free
+  region: singapore
+  dockerContext: .
+  dockerfilePath: ./docker-compose.yml
+version: "1"
