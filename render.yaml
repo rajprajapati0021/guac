@@ -7,5 +7,5 @@ services:
   plan: free
   region: singapore
   dockerContext: .
-  dockerfilePath: ./docker-compose.yml
+  dockerfilePath: ./Dockerfile
 version: "1"
